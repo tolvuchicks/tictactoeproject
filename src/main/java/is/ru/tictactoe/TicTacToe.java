@@ -14,6 +14,7 @@ public class TicTacToe
 		initialize();
 	}
 
+	// Initialize board as empty
 	public void initialize()
 	{
 		for(int i = 0; i < SIZE; i++)
@@ -25,22 +26,28 @@ public class TicTacToe
 		}
 	}
 
+	// Print board on screen
+	// TODO: FINISH
 	public void printBoard()
 	{
 		System.out.println("-------------");
 	}
 
-	public boolean checkFull()
+	// Check if board is full, returns true if so
+	// TODO: EDIT content of inner loop when the 
+	// the game has more logic
+	public static boolean checkFull()
 	{
 		boolean full = true;
 		for(int i = 0; i < SIZE; i++)
 		{
 			for(int j = 0; j < SIZE; j++)
 			{
-				if(board[i][j] == ' ')
-				{
-					full = false;
-				}
+				//if(board[i][j] == ' ')
+				//{
+				//	full = false;
+				//}
+				full = false;
 			}
 		}
 		return full;

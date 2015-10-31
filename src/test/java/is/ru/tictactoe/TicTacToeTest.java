@@ -11,4 +11,12 @@ public class TicTacToeTest {
     {
         assertEquals(1, TicTacToe.main(""));
     }
+
+    // This tests if the double for loop in 
+    // function works
+    @Test
+    public void checkIfBoardIsFull()
+    {
+    	assertEquals(false, TicTacToe.checkFull());
+    }
 }
