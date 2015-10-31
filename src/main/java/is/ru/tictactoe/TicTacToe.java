@@ -23,7 +23,12 @@ public class TicTacToe
 				board[i][j] = ' ';
 			}
 		}
-	}	
+	}
+
+	public void printBoard()
+	{
+		System.out.println("-------------");
+	}
 
     public static int main(String text) 
     {
