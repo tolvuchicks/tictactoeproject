@@ -30,6 +30,22 @@ public class TicTacToe
 		System.out.println("-------------");
 	}
 
+	public boolean checkFull()
+	{
+		boolean full = true;
+		for(int i = 0; i < SIZE; i++)
+		{
+			for(int j = 0; j < SIZE; j++)
+			{
+				if(board[i][j] == ' ')
+				{
+					full = false;
+				}
+			}
+		}
+		return full;
+	}
+
     public static int main(String text) 
     {
 		return 1;
