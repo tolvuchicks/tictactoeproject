@@ -1,0 +1,20 @@
+Kóðareglur fyrir TicTacToe verkefni 2015:
+
+Nöfn:
+	> Klasaheiti eru skrifuð með pascal casing, dæmi: ThisClass
+	> Fallaheiti eru skrifuð með camel casing, dæmi: thisFunction
+	> Nöfn á klösum, föllum og skrám eru á ensku
+
+Málfar:
+	> Skýrslur eru skrifaðar á íslensku
+	> Kóðinn sjálfur er skrifaður á ensku
+	> Athugasemdir við kóða eru skrifaðar á ensku
+	> Skýringar við commit eru skrifuð á ensku
+
+Svigar:
+	> Slaufusvigar byrja í næstu línu, bæði hjá föllum og línum
+	> Ekki er bil á undan sviga í fallaheitum, dæmi: thisFunction()
+	> Ekki er bil á undan sviga í lykkjum, dæmi: for()
+
+Tungumál:
+	> Kóðinn er skrifaður í java
