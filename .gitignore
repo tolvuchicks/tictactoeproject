@@ -1,6 +1,6 @@
 *.class
 *.DS_Store
-.gradle
+.gradle/2.8/*
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
