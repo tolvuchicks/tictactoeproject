@@ -32,6 +32,6 @@ public class TicTacToeTest {
     	t.placeMark(1, 1);
     	t.placeMark(2, 2);
 
-    	assertEquals(true, t.cheWinDiagonal());
+    	assertEquals(true, t.checkWinDiagonal());
     }
 }

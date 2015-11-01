@@ -81,7 +81,7 @@ public class TicTacToe
         return false;
     }
 
-    private boolean checkWinDiagonal()
+    public boolean checkWinDiagonal()
 	{
 		if(board[0][0] != ' ' && board[1][1] != ' ' && board[2][2] != ' ')
 		{
