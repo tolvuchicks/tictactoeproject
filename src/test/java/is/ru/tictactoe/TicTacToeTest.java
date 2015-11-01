@@ -14,4 +14,16 @@ public class TicTacToeTest {
     	assertEquals(false, TicTacToe.checkFull());
     }
 
+    @Test
+    public void checkDiagonalWinTest1()
+    {
+    	TicTacToe t = new TicTacToe();
+
+    	t.board[0][0] = 'x';
+    	t.board[1][1] = 'x';
+    	t.board[2][2] = 'x';
+
+    	assertEquals(true, t.cheWinDiagonal());
+    }
+
 }
