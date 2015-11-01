@@ -85,6 +85,6 @@ public class TicTacToeTest {
     {
         TicTacToe test = new TicTacToe();
 
-        assertEquals(false, test.checkWinHelper());
+        assertEquals(false, test.checkWinHelper(' ', ' ', ' '));
     }
 }

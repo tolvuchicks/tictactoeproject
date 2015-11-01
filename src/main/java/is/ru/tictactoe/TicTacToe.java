@@ -82,9 +82,9 @@ public class TicTacToe
 
     public boolean checkWinRow() 
     {
-    	for (int i = 0; i < 3; i++) 
+    	for (int i = 0; i < SIZE; i++) 
     	{
-    		if((board[i][0] != ' ') && (board[i][0] == board[i][1]) && (board[i][1] == board[i][2]))
+    		if(checkWinHelper(board[i][0], board[i][1], board[i][2]))
         	{
         		return true;
         	}
@@ -96,7 +96,7 @@ public class TicTacToe
 	{
      	for (int i = 0; i < SIZE; i++) 
      	{
-         	if ((board[0][i] != ' ') && (board[0][i] == board[1][i]) && (board[1][i] == board[2][i])) 
+         	if (checkWinHelper(board[0][i], board[1][i], board[2][i])) 
          	{
          	    return true;
         	}
@@ -107,20 +107,13 @@ public class TicTacToe
  	// Checks if there is a winner with a diagonal row
     public boolean checkWinDiagonal()
 	{
-		if(board[0][0] != ' ' && board[1][1] != ' ' && board[2][2] != ' ')
-		{
-			if(board[0][0] == board[1][1] && board[1][1] == board[2][2])
-			{
-				return true;
-			}
-		}
-		else if(board[0][2] != ' ' && board[1][1] != ' ' && board[2][0] != ' ')
-		{
-			if(board[0][2] == board[1][1] && board[1][1] == board[2][0])
-			{
-				return true;
-			}
-		}
-		return false;
+		return ((checkWinHelper(board[0][0], board[1][1], board[2][2])) || (checkWinHelper(board[0][2], board[1][1], board[2][0])));
 	}
+
+	public boolean checkWinHelper(char first, char second, char third) 
+	{
+
+        return ((first != ' ') && (first == second) && (second == third));
+    }
+
 }
