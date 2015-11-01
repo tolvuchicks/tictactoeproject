@@ -28,7 +28,18 @@ public class TicTacToeTest {
     }
 
     @Test
+    public void checkWinRowTest()
+    {
+    	TicTacToe test = new TicTacToe();
 
+    	test.placeMark(0, 0);
+    	test.placeMark(0, 1);
+    	test.placeMark(0, 2);
+
+    	assertEquals(true, test.checkWinRow());
+    }
+
+    @Test
     public void checkIfBoardIsFullTest()
     {
         TicTacToe test = new TicTacToe();
@@ -45,6 +56,7 @@ public class TicTacToeTest {
         assertEquals(true, test.checkFull());
     }
 
+    @Test
     public void checkWinColumnsTest() 
     {
         TicTacToe test = new TicTacToe();
