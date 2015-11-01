@@ -14,4 +14,10 @@ public class TicTacToeTest {
     	assertEquals(false, TicTacToe.checkFull());
     }
 
+    @Test
+    public void placeMarkTest()
+    {
+        assertEquals(false, TicTacToe.placeMark(4, 4));
+    }
+
 }
