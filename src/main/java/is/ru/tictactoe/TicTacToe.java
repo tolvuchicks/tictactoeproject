@@ -81,7 +81,19 @@ public class TicTacToe
         return false;
     }
 
-    // Checks if there is a winner with a diagonal row
+    public boolean checkWinColumns() 
+	{
+     	for (int i = 0; i < SIZE; i++) 
+     	{
+         	if ((board[0][i] != ' ') && (board[0][i] == board[1][i]) && (board[1][i] == board[2][i])) 
+         	{
+         	    return true;
+        	}
+    	 }
+     return false;
+ 	}
+
+ 	// Checks if there is a winner with a diagonal row
     public boolean checkWinDiagonal()
 	{
 		if(board[0][0] != ' ' && board[1][1] != ' ' && board[2][2] != ' ')

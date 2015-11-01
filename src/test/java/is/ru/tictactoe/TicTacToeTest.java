@@ -24,6 +24,18 @@ public class TicTacToeTest {
     }
 
     @Test
+    public void checkWinColumnsTest() 
+    {
+        TicTacToe test = new TicTacToe();
+        
+        test.placeMark(0, 0);
+        test.placeMark(1, 0);
+        test.placeMark(2, 0);
+        
+        assertEquals(true, test.checkWinColumns());
+    }
+
+    @Test
     public void checkDiagonalWinTest1()
     {
     	TicTacToe t = new TicTacToe();
