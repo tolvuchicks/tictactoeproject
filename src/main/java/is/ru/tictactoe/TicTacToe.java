@@ -9,7 +9,7 @@ public class TicTacToe
 	public TicTacToe()
 	{
 		board = new char[SIZE][SIZE];
-		humanPlayer = 'x';
+		humanPlayer = 'X';
 
 		initialize();
 	}
@@ -63,5 +63,22 @@ public class TicTacToe
 		}
 		return full;
 	}
+
+	public boolean placeMark(int row, int col) 
+    {		
+        // If mark is not inside board, return false
+        if ((row >= 0) && (row < SIZE)) 
+        {
+            if ((col >= 0) && (col < SIZE)) 
+            {
+                if (board[row][col] == ' ') 
+                {
+                    board[row][col] = humanPlayer;
+                    return true;
+                }
+            }
+        }	
+        return false;
+    }
 
 }

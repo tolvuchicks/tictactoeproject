@@ -17,7 +17,9 @@ public class TicTacToeTest {
     @Test
     public void placeMarkTest()
     {
-        assertEquals(false, TicTacToe.placeMark(4, 4));
+        TicTacToe test = new TicTacToe();
+
+        assertEquals(false, test.placeMark(4, 4));
     }
 
 }
