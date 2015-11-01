@@ -46,4 +46,28 @@ public class TicTacToeTest {
 
     	assertEquals(true, t.checkWinDiagonal());
     }
+
+    @Test
+    public void checkDiagonalWinTest2()
+    {
+    	TicTacToe t = new TicTacToe();
+
+    	t.placeMark(0, 2);
+    	t.placeMark(1, 1);
+    	t.placeMark(2, 0);
+
+    	assertEquals(true, t.checkWinDiagonal());
+    }
+
+    @Test
+    public void checkDiagonalWinTest3()
+    {
+    	TicTacToe t = new TicTacToe();
+
+    	t.placeMark(0, 0);
+    	t.placeMark(0, 1);
+    	t.placeMark(0, 2);
+
+    	assertEquals(false, t.checkWinDiagonal());
+    }
 }
