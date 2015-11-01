@@ -54,11 +54,10 @@ public class TicTacToe
 		{
 			for(int j = 0; j < SIZE; j++)
 			{
-				//if(board[i][j] == ' ')
-				//{
-				//	full = false;
-				//}
-				full = false;
+				if(board[i][j] == ' ')
+				{
+					full = false;
+				}
 			}
 		}
 		return full;
@@ -79,6 +78,18 @@ public class TicTacToe
             }
         }	
         return false;
+    }
+
+    public boolean checkWinRow() 
+    {
+    	for (int i = 0; i < 3; i++) 
+    	{
+    		if((board[i][0] != ' ') && (board[i][0] == board[i][1]) && (board[i][1] == board[i][2]))
+        	{
+        		return true;
+        	}
+    	}
+    	return false;
     }
 
     public boolean checkWinColumns() 
@@ -112,5 +123,4 @@ public class TicTacToe
 		}
 		return false;
 	}
-
 }
