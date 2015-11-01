@@ -81,4 +81,17 @@ public class TicTacToe
         return false;
     }
 
+    public boolean checkWinColumns() 
+	{
+     	for (int i = 0; i < SIZE; i++) 
+     	{
+         	if ((board[0][i] != ' ') && (board[0][i] == board[1][i]) && (board[1][i] == board[2][i])) 
+         	{
+         	    return true;
+        	}
+    	 }
+     return false;
+ 	}
+
+
 }
