@@ -47,7 +47,7 @@ public class TicTacToe
 	// Check if board is full, returns true if so
 	// TODO: EDIT content of inner loop when the 
 	// the game has more logic
-	public static boolean checkFull()
+	public boolean checkFull()
 	{
 		boolean full = true;
 		for(int i = 0; i < SIZE; i++)
@@ -93,5 +93,24 @@ public class TicTacToe
      return false;
  	}
 
+ 	// Checks if there is a winner with a diagonal row
+    public boolean checkWinDiagonal()
+	{
+		if(board[0][0] != ' ' && board[1][1] != ' ' && board[2][2] != ' ')
+		{
+			if(board[0][0] == board[1][1] && board[1][1] == board[2][2])
+			{
+				return true;
+			}
+		}
+		else if(board[0][2] != ' ' && board[1][1] != ' ' && board[2][0] != ' ')
+		{
+			if(board[0][2] == board[1][1] && board[1][1] == board[2][0])
+			{
+				return true;
+			}
+		}
+		return false;
+	}
 
 }
