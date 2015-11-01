@@ -123,4 +123,17 @@ public class TicTacToe
 		}
 		return false;
 	}
+
+	// Changes players between rounds
+	public void changePlayer()
+	{
+		if(humanPlayer == 'x')
+		{
+			humanPlayer = 'o';
+		}
+		else
+		{
+			humanPlayer = 'x';
+		}
+	}
 }
