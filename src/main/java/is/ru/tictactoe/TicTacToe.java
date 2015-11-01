@@ -47,22 +47,21 @@ public class TicTacToe
 	// Check if board is full, returns true if so
 	// TODO: EDIT content of inner loop when the 
 	// the game has more logic
-	/*public static boolean checkFull()
+	public boolean checkFull()
 	{
 		boolean full = true;
 		for(int i = 0; i < SIZE; i++)
 		{
 			for(int j = 0; j < SIZE; j++)
 			{
-				//if(board[i][j] == ' ')
-				//{
-				//	full = false;
-				//}
-				full = false;
+				if(board[i][j] == ' ')
+				{
+					full = false;
+				}
 			}
 		}
 		return full;
-	}*/
+	}
 
 	public boolean placeMark(int row, int col) 
     {		

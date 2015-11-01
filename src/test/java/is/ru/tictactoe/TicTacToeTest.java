@@ -11,7 +11,9 @@ public class TicTacToeTest {
     @Test
     public void checkIfBoardIsEmptyTest()
     {
-    	assertEquals(false, TicTacToe.checkFull());
+    	TicTacToe test = new TicTacToe();
+
+        assertEquals(false, test.checkFull());
     }
 
     @Test
