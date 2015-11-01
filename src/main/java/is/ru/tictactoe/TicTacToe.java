@@ -28,10 +28,21 @@ public class TicTacToe
 
 	// Print board on screen
 	// TODO: FINISH
-	public void printBoard()
-	{
-		System.out.println("-------------");
-	}
+	 public void printBoard() 
+    {
+        System.out.println("-------------");
+		
+        for (int i = 0; i < SIZE; i++) 
+        {
+            System.out.print("| ");
+            for (int j = 0; j < SIZE; j++) 
+            {
+                System.out.print(board[i][j] + " | ");
+            }
+            System.out.println();
+            System.out.println("-------------");
+        }
+    }
 
 	// Check if board is full, returns true if so
 	// TODO: EDIT content of inner loop when the 
@@ -53,8 +64,4 @@ public class TicTacToe
 		return full;
 	}
 
-    public static int main(String text) 
-    {
-		return 1;
-    }
 }
