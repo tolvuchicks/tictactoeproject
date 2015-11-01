@@ -54,11 +54,10 @@ public class TicTacToe
 		{
 			for(int j = 0; j < SIZE; j++)
 			{
-				//if(board[i][j] == ' ')
-				//{
-				//	full = false;
-				//}
-				full = false;
+				if(board[i][j] == ' ')
+				{
+					full = false;
+				}
 			}
 		}
 		return full;

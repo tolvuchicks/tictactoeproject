@@ -9,8 +9,12 @@ public class TicTacToeTest {
     // This tests if the double for loop in 
     // function works
     @Test
-    public void checkIfBoardIsFull()
+    public void checkIfBoardIsEmptyTest()
     {
+    	TicTacToe test = new TicTacToe();
+
+        assertEquals(false, test.checkFull());
+
     	TicTacToe t = new TicTacToe();
     	assertEquals(false, t.checkFull());
     }
@@ -24,6 +28,23 @@ public class TicTacToeTest {
     }
 
     @Test
+
+    public void checkIfBoardIsFullTest()
+    {
+        TicTacToe test = new TicTacToe();
+        test.placeMark(0, 0);
+        test.placeMark(0, 1);
+        test.placeMark(0, 2);
+        test.placeMark(1, 0);
+        test.placeMark(1, 1);
+        test.placeMark(1, 2);
+        test.placeMark(2, 0);
+        test.placeMark(2, 1);
+        test.placeMark(2, 2);
+
+        assertEquals(true, test.checkFull());
+    }
+
     public void checkWinColumnsTest() 
     {
         TicTacToe test = new TicTacToe();
