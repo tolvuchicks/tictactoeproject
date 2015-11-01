@@ -22,4 +22,16 @@ public class TicTacToeTest {
         assertEquals(false, test.placeMark(4, 4));
     }
 
+    @Test
+    public void checkWinColumnsTest() 
+    {
+        TicTacToe test = new TicTacToe();
+        
+        test.placeMark(0, 0);
+        test.placeMark(1, 0);
+        test.placeMark(2, 0);
+        
+        assertEquals(true, test.checkWinColumns());
+    }
+
 }
