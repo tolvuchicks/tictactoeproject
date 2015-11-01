@@ -2,5 +2,5 @@
 
 ./bin/clean
 ./bin/compile
-./bin/compile_tests
+./bin/compileTest
 ./bin/unit_test
