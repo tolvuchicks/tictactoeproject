@@ -80,6 +80,14 @@ public class TicTacToeTest {
     	assertEquals(true, t.checkWinDiagonal());
     }
 
+    @Test 
+    public void checkWinHelperTest()
+    {
+        TicTacToe test = new TicTacToe();
+
+        assertEquals(false, test.checkWinHelper(' ', ' ', ' '));
+    }
+    
     @Test
     public void checkDiagonalWinTest2()
     {
@@ -102,5 +110,6 @@ public class TicTacToeTest {
     	t.placeMark(0, 2);
 
     	assertEquals(false, t.checkWinDiagonal());
+
     }
 }
