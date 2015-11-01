@@ -15,6 +15,14 @@ public class TicTacToeTest {
     }
 
     @Test
+    public void placeMarkTest()
+    {
+        TicTacToe test = new TicTacToe();
+
+        assertEquals(false, test.placeMark(4, 4));
+    }
+
+    @Test
     public void checkDiagonalWinTest1()
     {
     	TicTacToe t = new TicTacToe();
@@ -25,5 +33,4 @@ public class TicTacToeTest {
 
     	assertEquals(true, t.cheWinDiagonal());
     }
-
 }
