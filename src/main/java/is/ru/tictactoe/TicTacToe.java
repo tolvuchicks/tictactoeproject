@@ -140,6 +140,20 @@ public class TicTacToe
 
 	public boolean checkWin()
 	{
-
+		if(checkWinRow() == true)
+		{
+			return true;
+		}
+		else if(checkWinColumns() == true)
+		{
+			return true;
+		}
+		else if(checkWinDiagonal() == true)
+		{
+			return true;
+		}
+		return false;
 	}
 }
+
+//return (checkRowsForWin() || checkColumnsForWin() || checkDiagonalsForWin());

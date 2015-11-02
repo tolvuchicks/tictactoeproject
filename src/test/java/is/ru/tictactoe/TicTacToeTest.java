@@ -122,7 +122,7 @@ public class TicTacToeTest {
     }
 
     @Test
-    public void checkWinTest()
+    public void checkWinTest1()
     {
         TicTacToe t = new TicTacToe();
 
@@ -130,6 +130,6 @@ public class TicTacToeTest {
         t.placeMark(0, 1);
         t.placeMark(0, 2);
 
-        assertEquals(true, checkWin());
+        assertEquals(true, t.checkWin());
     }
 }
