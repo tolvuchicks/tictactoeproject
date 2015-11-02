@@ -9,13 +9,13 @@ public class TicTacToeGame
 		TicTacToe game = new TicTacToe();
 		Scanner in = new Scanner(System.in);
 
-		System.out.println("Velkomin/nn í TicTacToe! Til þess að velja reit þarf að velja viðkomandi tölur:\n"
-			+ "Fyrri talan er x og seinni talan er y \n");
+		System.out.println("Welcome to the TicTacToe Game! To select your field, please follow this format:\n"
+			+ "First x and then y (x y)\n");
 		game.printBoardHelp();
 	
 		while(!game.checkFull() && !game.checkWin())
 		{	 
-			 System.out.println("Sláðu inn x og y \n");
+			 System.out.println("Please enter x and y\n");
 		     int x = in.nextInt();
 		     int y = in.nextInt();
 		     
@@ -27,18 +27,18 @@ public class TicTacToeGame
 		     }
 		     else
 		     {
-		    	 System.out.println("Vitlaust valið, gerðu aftur!");
+		    	 System.out.println("That's not a valid selection, please try again!");
 		     }
 		}
 		
 		if (game.checkWin()) 
 		{
-			System.out.println("Kæru gestir, við erum komin með sigurvegara!");
+			System.out.println("~~ LADIES AND GENTLEMEN - WE HAVE A WINNER! ~~");
 			System.exit(0);
 		}
 		else if (game.checkFull()) 
 		{
-			System.out.println("Jafntefli!");
+			System.out.println("That's a tie!");
 			System.exit(0);
 		}
 		}
