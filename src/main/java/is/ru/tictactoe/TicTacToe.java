@@ -137,4 +137,9 @@ public class TicTacToe
     	}
     	return true;
 	}
+
+	public boolean checkWin()
+	{
+
+	}
 }

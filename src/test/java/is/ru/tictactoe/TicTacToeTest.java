@@ -120,4 +120,16 @@ public class TicTacToeTest {
 
         assertEquals(false, test.checkInput(4, 4));
     }
+
+    @Test
+    public void checkWinTest()
+    {
+        TicTacToe t = new TicTacToe();
+
+        t.placeMark(0, 0);
+        t.placeMark(0, 1);
+        t.placeMark(0, 2);
+
+        assertEquals(true, checkWin());
+    }
 }
