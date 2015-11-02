@@ -13,6 +13,12 @@ apply plugin: 'application'
 
 mainClassName = "is.ru.tictactoe.TicTacToe"
 
+/*jar {
+￼manifest {
+        attributes("Main-Class": "is.ru.tictactoe.TicTacToe")
+        }
+} */
+
 // In this section you declare where to find the dependencies of your project
 repositories {
     // Use 'jcenter' for resolving your dependencies.
@@ -31,10 +37,3 @@ dependencies {
     // 'test.useTestNG()' to your build script.
     testCompile 'junit:junit:4.12'
 }
-/*
-jar {
-￼manifest {
-        attributes("Main-Class": "is.ru.tictactoe.TicTacToe")
-        }
-}
-*/
