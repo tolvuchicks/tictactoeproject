@@ -137,4 +137,13 @@ public class TicTacToe
     	}
     	return true;
 	}
+
+	public boolean checkWin()
+	{
+		if(checkWinRow() == true || checkWinColumns() == true || checkWinDiagonal() == true)
+		{
+			return true;
+		}
+		return false;
+	}
 }

@@ -120,4 +120,52 @@ public class TicTacToeTest {
 
         assertEquals(false, test.checkInput(4, 4));
     }
+
+    @Test
+    public void checkWinTest1()
+    {
+        TicTacToe t = new TicTacToe();
+
+        t.placeMark(0, 0);
+        t.placeMark(0, 1);
+        t.placeMark(0, 2);
+
+        assertEquals(true, t.checkWin());
+    }
+
+    @Test
+    public void checkWinTest2()
+    {
+        TicTacToe t = new TicTacToe();
+
+        t.placeMark(0, 0);
+        t.placeMark(1, 1);
+        t.placeMark(2, 2);
+
+        assertEquals(true, t.checkWin());
+    }
+
+    @Test
+    public void checkWinTest3()
+    {
+        TicTacToe t = new TicTacToe();
+
+        t.placeMark(0, 0);
+        t.placeMark(1, 0);
+        t.placeMark(2, 0);
+
+        assertEquals(true, t.checkWin());
+    }
+
+    @Test
+    public void checkWinTest4()
+    {
+        TicTacToe t = new TicTacToe();
+
+        t.placeMark(0, 0);
+        t.placeMark(1, 1);
+        t.placeMark(0, 2);
+
+        assertEquals(false, t.checkWin());
+    }
 }
