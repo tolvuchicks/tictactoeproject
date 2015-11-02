@@ -112,4 +112,14 @@ public class TicTacToeTest {
     	assertEquals(false, t.checkWinDiagonal());
 
     }
+
+    @Test
+    public void checkInputTest()
+    {
+        TicTacToe test = new TicTacToe();
+
+        t.placeMark(4, 4);
+
+        assertEquals(false, test.CheckInput();
+    }
 }
