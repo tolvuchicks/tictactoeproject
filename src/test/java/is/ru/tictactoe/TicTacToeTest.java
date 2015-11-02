@@ -6,8 +6,6 @@ import org.junit.Test;
 
 public class TicTacToeTest {
 
-    // This tests if the double for loop in 
-    // function works
     @Test
     public void checkIfBoardIsEmptyTest()
     {
@@ -71,13 +69,13 @@ public class TicTacToeTest {
     @Test
     public void checkDiagonalWinTest1()
     {
-    	TicTacToe t = new TicTacToe();
+    	TicTacToe test = new TicTacToe();
 
-    	t.placeMark(0, 0);
-    	t.placeMark(1, 1);
-    	t.placeMark(2, 2);
+    	test.placeMark(0, 0);
+    	test.placeMark(1, 1);
+    	test.placeMark(2, 2);
 
-    	assertEquals(true, t.checkWinDiagonal());
+    	assertEquals(true, test.checkWinDiagonal());
     }
 
     @Test 
@@ -91,25 +89,25 @@ public class TicTacToeTest {
     @Test
     public void checkDiagonalWinTest2()
     {
-    	TicTacToe t = new TicTacToe();
+    	TicTacToe test = new TicTacToe();
 
-    	t.placeMark(0, 2);
-    	t.placeMark(1, 1);
-    	t.placeMark(2, 0);
+    	test.placeMark(0, 2);
+    	test.placeMark(1, 1);
+    	test.placeMark(2, 0);
 
-    	assertEquals(true, t.checkWinDiagonal());
+    	assertEquals(true, test.checkWinDiagonal());
     }
 
     @Test
     public void checkDiagonalWinTest3()
     {
-    	TicTacToe t = new TicTacToe();
+    	TicTacToe test = new TicTacToe();
 
-    	t.placeMark(0, 0);
-    	t.placeMark(0, 1);
-    	t.placeMark(0, 2);
+    	test.placeMark(0, 0);
+    	test.placeMark(0, 1);
+    	test.placeMark(0, 2);
 
-    	assertEquals(false, t.checkWinDiagonal());
+    	assertEquals(false, test.checkWinDiagonal());
 
     }
 
@@ -124,48 +122,48 @@ public class TicTacToeTest {
     @Test
     public void checkWinTest1()
     {
-        TicTacToe t = new TicTacToe();
+        TicTacToe test = new TicTacToe();
 
-        t.placeMark(0, 0);
-        t.placeMark(0, 1);
-        t.placeMark(0, 2);
+        test.placeMark(0, 0);
+        test.placeMark(0, 1);
+        test.placeMark(0, 2);
 
-        assertEquals(true, t.checkWin());
+        assertEquals(true, test.checkWin());
     }
 
     @Test
     public void checkWinTest2()
     {
-        TicTacToe t = new TicTacToe();
+        TicTacToe test = new TicTacToe();
 
-        t.placeMark(0, 0);
-        t.placeMark(1, 1);
-        t.placeMark(2, 2);
+        test.placeMark(0, 0);
+        test.placeMark(1, 1);
+        test.placeMark(2, 2);
 
-        assertEquals(true, t.checkWin());
+        assertEquals(true, test.checkWin());
     }
 
     @Test
     public void checkWinTest3()
     {
-        TicTacToe t = new TicTacToe();
+        TicTacToe test = new TicTacToe();
 
-        t.placeMark(0, 0);
-        t.placeMark(1, 0);
-        t.placeMark(2, 0);
+        test.placeMark(0, 0);
+        test.placeMark(1, 0);
+        test.placeMark(2, 0);
 
-        assertEquals(true, t.checkWin());
+        assertEquals(true, test.checkWin());
     }
 
     @Test
     public void checkWinTest4()
     {
-        TicTacToe t = new TicTacToe();
+        TicTacToe test = new TicTacToe();
 
-        t.placeMark(0, 0);
-        t.placeMark(1, 1);
-        t.placeMark(0, 2);
+        test.placeMark(0, 0);
+        test.placeMark(1, 1);
+        test.placeMark(0, 2);
 
-        assertEquals(false, t.checkWin());
+        assertEquals(false, test.checkWin());
     }
 }
