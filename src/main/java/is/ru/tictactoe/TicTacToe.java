@@ -128,4 +128,13 @@ public class TicTacToe
 			humanPlayer = 'x';
 		}
 	}
+
+	public boolean checkInput(int x, int y)
+	{
+		if(!placeMark(x, y))
+    	{
+    		return false;
+    	}
+    	return true;
+	}
 }

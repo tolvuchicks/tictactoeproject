@@ -118,8 +118,6 @@ public class TicTacToeTest {
     {
         TicTacToe test = new TicTacToe();
 
-        t.placeMark(4, 4);
-
-        assertEquals(false, test.CheckInput();
+        assertEquals(false, test.checkInput(4, 4));
     }
 }
