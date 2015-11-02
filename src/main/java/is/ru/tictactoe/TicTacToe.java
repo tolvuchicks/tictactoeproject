@@ -9,7 +9,7 @@ public class TicTacToe
 	public TicTacToe()
 	{
 		board = new char[SIZE][SIZE];
-		humanPlayer = 'X';
+		humanPlayer = 'x';
 
 		initialize();
 	}
@@ -43,6 +43,18 @@ public class TicTacToe
             System.out.println("-------------");
         }
     }
+
+   	public void printBoardHelp() 
+	{
+        System.out.println("----------------");			
+        System.out.printf("0 0 | 0 1 | 0 2\n");
+        System.out.println("----------------");
+    	System.out.printf("1 0 | 1 1 | 1 2\n");
+    	System.out.println("---------------");
+    	System.out.printf("2 0 | 2 1 | 2 2\n");
+        System.out.println("----------------");        
+	}
+	 
 
 	// Check if board is full, returns true if so
 	// TODO: EDIT content of inner loop when the 
