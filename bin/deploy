@@ -3,7 +3,13 @@
 bin/clean
 bin/package
 
-test -f /tmp/tictactoeproject.jar && rm /tmp/tictactoeproject.jar
-cp build/libs/tictactoeproject.jar /tmp
+#test -f /tmp/tictactoeproject.jar && rm /tmp/tictactoeproject.jar
+#cp build/libs/tictactoeproject.jar /tmp
 
-java -jar /tmp/tictactoeproject.jar
+#java -jar /tmp/tictactoeproject.jar
+
+
+cp ~/tictactoeproject/build/libs/tictactoeproject.jar ~/tictactoeproject/build/tmp/tictactoeproject.jar
+
+java -jar ~/tictactoeproject/build/tmp/tictactoeproject.jar
+
