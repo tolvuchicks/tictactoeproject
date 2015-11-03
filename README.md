@@ -1,32 +1,31 @@
 [![Build Status](https://travis-ci.org/tolvuchicks/tictactoeproject.png)](https://travis-ci.org/tolvuchicks/tictactoeproject)
 
 # tictactoeproject
-Tic Tac Toe: Late term assignment - Hugbúnaðarfræð15
+Tic Tac Toe: Late term assignment - Hugbúnaðarfræði15
 
 ## Development manual
 
-Here are some useful informations you need to start programming on this TicTacToe project.
+Here are some useful information you need to start programming on this TicTacToe project.
 
-The source control client for this project is **GitHub** and you need to make you're own account to get access to the project. If a programmer wants to be að part of the organization "tolvuchicks" please send a request to annag14@ru.is. To get to the right repository click [Here](https://github.com/tolvuchicks/tictactoeproject). 
+The source control client for this project is **GitHub** and you need to make your own account to get access to the project. If a programmer wants to be a part of the organization "tolvuchicks" please send a request to annag14@ru.is. To get to the right repository click [Here](https://github.com/tolvuchicks/tictactoeproject). 
 
 To build the project:  
   
-* **Java** has to be installed on you're local host.  
+* **Java** has to be installed on your local host.  
 
-* Command line has to be used and this line is used for build and test: **./bin/build\_and_test**. Gradle is used in the build process.
+* Command line has to be used and this line is used for build and test: **./bin/build_and_test**. Gradle is used in the build process.
 
-**Tavis** is used as continous integration server and it runs after each commit. 
+**Travis** is used as continous integration server and it runs after each commit. 
 
 
 ## Administration manual
-þetta lýsing á því hvernig afurðin (í ykkar tilfelli jar skrá) er sett upp á vél hjá hefðbundnum notanda.
 
 Here are some information about how you can access the project and play the game on your local host. 
   
   * Clone the project in command line using [this](https://github.com/tolvuchicks/tictactoeproject) link.
   * Run the package file using this command: ./package
   * Access the build directory then access libs and run this command: java -jar tictactoeproject.jar
-  * **Java** has to be installed on you're local host. 
+  * **Java** has to be installed on your local host. 
   * VOILA
 
 ## Design report
