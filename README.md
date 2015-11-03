@@ -21,7 +21,13 @@ To build the project:
 ## Administration manual
 þetta lýsing á því hvernig afurðin (í ykkar tilfelli jar skrá) er sett upp á vél hjá hefðbundnum notanda.
 
-Rekstrarmaður kemur að verkefninu og hvað gerir hann? hvert sækir hann jarinn? hvað þarf að gera til að dreifa honum? Þarf eitthvað að fyglja?
+Here are some information about how you can access the project and play the game on your local host. 
+  
+  * Clone the project in command line using [this](https://github.com/tolvuchicks/tictactoeproject) link.
+  * Run the package file using this command: ./package
+  * Access the build directory then access libs and run this command: java -jar tictactoeproject.jar
+  * **Java** has to be installed on you're local host. 
+  * VOILA
 
 ## Design report
 The game TicTacToe will be implemented in this project. This is a simple console project. As a player you need to run the project to play the game. The game is for two players, one is using X and the other one O. Test driven development will be used in the coding process. Since the group consists of four people it was desided to always work on the project together at school. Each team member will be working in their local server using branches and pull requests. A branch will be made for each functionality and named accordingly.
