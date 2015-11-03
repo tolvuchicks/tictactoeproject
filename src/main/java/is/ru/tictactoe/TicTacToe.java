@@ -27,8 +27,7 @@ public class TicTacToe
 	}
 
 	// Print board on screen
-	// TODO: FINISH
-	 public void printBoard() 
+	public void printBoard() 
     {
         System.out.println("-------------");
 		
@@ -44,6 +43,7 @@ public class TicTacToe
         }
     }
 
+    // Prints board with values for each field
    	public void printBoardHelp() 
 	{
         System.out.println("----------------");			
@@ -56,9 +56,7 @@ public class TicTacToe
 	}
 	 
 
-	// Check if board is full, returns true if so
-	// TODO: EDIT content of inner loop when the 
-	// the game has more logic
+	// Check if board is full, returns true if full, else false
 	public boolean checkFull()
 	{
 		boolean full = true;
@@ -75,6 +73,7 @@ public class TicTacToe
 		return full;
 	}
 
+	// Place players mark to the selected field
 	public boolean placeMark(int row, int col) 
     {		
         // If mark is not inside board, return false
@@ -92,6 +91,7 @@ public class TicTacToe
         return false;
     }
 
+    // Checks if there is a horizontal win anywhere on the board
     public boolean checkWinRow() 
     {
     	for (int i = 0; i < SIZE; i++) 
@@ -104,6 +104,7 @@ public class TicTacToe
     	return false;
     }
 
+    // Checks if there is a vertical win anywhere on the board
     public boolean checkWinColumns() 
 	{
      	for (int i = 0; i < SIZE; i++) 
@@ -116,7 +117,7 @@ public class TicTacToe
      return false;
  	}
 
- 	// Checks if there is a winner with a diagonal row
+ 	// Check if one of two diagonal lines has a winner
     public boolean checkWinDiagonal()
 	{
 		return ((checkWinHelper(board[0][0], board[1][1], board[2][2])) || (checkWinHelper(board[0][2], board[1][1], board[2][0])));
@@ -141,6 +142,7 @@ public class TicTacToe
 		}
 	}
 
+	// Check if the input is valid
 	public boolean checkInput(int x, int y)
 	{
 		if(!placeMark(x, y))
@@ -152,10 +154,6 @@ public class TicTacToe
 
 	public boolean checkWin()
 	{
-		if(checkWinRow() == true || checkWinColumns() == true || checkWinDiagonal() == true)
-		{
-			return true;
-		}
-		return false;
+		return (checkWinRow() == true || checkWinColumns() == true || checkWinDiagonal() == true);
 	}
 }
