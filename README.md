@@ -5,7 +5,7 @@ Tic Tac Toe: Late term assignment - Hugbúnaðarfræði15
 
 ## Development manual
 
-Here are some useful information you need to start programming on this TicTacToe project.
+Here are some useful information to help you start programming on the TicTacToe project.
 
 The source control client for this project is **GitHub** and you need to make your own account to get access to the project. If a programmer wants to be a part of the organization "tolvuchicks" please send a request to annag14@ru.is. To get to the right repository click [Here](https://github.com/tolvuchicks/tictactoeproject). 
 
@@ -20,7 +20,7 @@ To build the project:
 
 ## Administration manual
 
-Here are some information about how you can access the project and play the game on your local host. 
+Here you'll find information about how to can access the project and play the game on your local host. 
   
   * Clone the project in command line using [this](https://github.com/tolvuchicks/tictactoeproject) link.
   * Run the package file using this command: ./package
