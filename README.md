@@ -19,11 +19,11 @@ To build the project:
 
 
 ## Administration manual
+þetta lýsing á því hvernig afurðin (í ykkar tilfelli jar skrá) er sett upp á vél hjá hefðbundnum notanda.
 
 Rekstrarmaður kemur að verkefninu og hvað gerir hann? hvert sækir hann jarinn? hvað þarf að gera til að dreifa honum? Þarf eitthvað að fyglja?
 
 ## Design report
-
 The game TicTacToe will be implemented in this project. This is a simple console project. As a player you need to run the project to play the game. The game is for two players, one is using X and the other one O. Test driven development will be used in the coding process.
 
 This is a quet small project so it was desided to use only three classes. Below is the class diagram. 
